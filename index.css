@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+h4 {
+    color: black;
+    font-weight: normal;
+}
+
+.state {
+    padding: 5px 5px 5px 0;
+}
+
+.parksFound {
+    display:none;
+}
+
+.button {
+    margin: 20px 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li img {
+    display: block;
+    margin: 10px auto;    
+}
+
