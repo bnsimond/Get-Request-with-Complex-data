@@ -1,3 +1,4 @@
+"use strict";
 
 const apiKey = "ohLjdxZW7g8n4P27hzyGjqf8WnQWAGMI6iGEkS20";
 const searchURL = "https://developer.nps.gov/api/v1/parks";
@@ -50,11 +51,14 @@ function submitListener () {
         e.preventDefault();
         $('#results-list').html("<li><img src='loadinggif.gif'></li>")
         const stateInput = $("#state-search").val();
-        const parksRequested = $("#amountRequested").val() || 5;
+        const parksRequested = $("#amountRequested").val() || 10;
         console.log(stateInput, parksRequested)
         getParks (stateInput, parksRequested)
-        $('.parksFound').show();
+        $('.parksFound, #reset-button').toggle();
     });
+      
+     
 }
 
 $(submitListener)
+

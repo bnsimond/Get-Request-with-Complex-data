@@ -36,3 +36,15 @@ li img {
     margin: 10px auto;    
 }
 
+container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background: lightgreen;
+    padding: 10px;
+    border-radius:10px;
+}
+
+#reset-button {
+    display: none;
+}
